@@ -1,0 +1,16 @@
+<h1>Login</h1>
+<a routerLink="/register">Register</a>
+@if (errorMessage!=null) {
+  {{errorMessage}}
+}
+<form [formGroup]="formLogin" (ngSubmit)="logarFirebase()">
+  <div>
+    <input type="text" placeholder="Email" formControlName="email">
+  </div>
+  <div>
+    <input type="password" placeholder="Password" formControlName="senha">
+  </div>
+  <div>
+    <button type="submit">Sign In</button>
+  </div>
+</form>

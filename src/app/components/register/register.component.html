@@ -1,0 +1,22 @@
+<h1>Register</h1>
+<a routerLink="/login">login</a>
+@if (errorMessage!=null) {
+  {{errorMessage}}
+}
+<form [formGroup]="formRegister" (ngSubmit)="onSubmit()">
+  <div>
+    <input type="text" placeholder="Username" formControlName="name">
+  </div>
+  <div>
+    <input type="text" placeholder="Email" formControlName="email">
+  </div>
+  <div>
+    <input type="password" placeholder="Password" formControlName="senha">
+  </div>
+  <div>
+    <input type="file" placeholder="Imagem" (change)="onFileSelected($event)">
+  </div>
+  <div>
+    <button type="submit">Sign In</button>
+  </div>
+</form>

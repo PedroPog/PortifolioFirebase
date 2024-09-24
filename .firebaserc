@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "baseangularbd": {
+      "hosting": {
+        "lojagene": [
+          "baseangularbd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "baseangularbd"
+  }
+}
