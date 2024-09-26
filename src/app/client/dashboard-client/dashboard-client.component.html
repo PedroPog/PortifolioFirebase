@@ -1,1 +1,19 @@
-<p>dashboard-client works!</p>
+<section>
+  <mat-card>
+    <mat-card-header>
+        <mat-card-title>Perfil</mat-card-title>
+        <mat-card-subtitle>{{authService.currentUserSig()?.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img alt="" matCardImage [src]="authService.currentUserSig()?.imagem">
+    <mat-card-content>
+        Text content
+    </mat-card-content>
+    <mat-card-actions align="start">
+        <button mat-button >Action1</button>
+
+    </mat-card-actions>
+    <mat-card-footer>
+        Footer
+    </mat-card-footer>
+  </mat-card>
+</section>

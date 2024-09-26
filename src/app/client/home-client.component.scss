@@ -3,6 +3,47 @@
   text-align: center;
 }
 .img-proffile{
+  width: 90%;
   border-radius: 100%;
+}
+.icons-profile{
+  display: flex;
+  align-items: center;
+  gap: 8%;
+}
+
+
+.container {
+  width: 100%;
+  height: 93%;
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+}
+
+.sidenav {
+  width: 15vw;
+  max-width: 15vw;
+}
+
+mat-drawer {
+  width: 15rem;
+  border-radius: 0;
+}
+
+.link {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0;
+  margin-bottom: 0.2rem;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: none;
+}
+.no-color{
+  background-color: white;
+  color: black;
 }
 

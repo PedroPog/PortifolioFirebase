@@ -1,12 +1,17 @@
 import { Routes } from '@angular/router';
 import { DashboardClientComponent } from './client/dashboard-client/dashboard-client.component';
 import { DashboardAdmComponent } from './admins/dashboard-adm/dashboard-adm.component';
+import { ConteudoClientComponent } from './client/conteudo-client/conteudo-client.component';
 
 export const routes: Routes = [
   {
     path:'',title:'Home -- ',
     loadComponent:()=>import('./client/home-client.component'),
     children:[
+      {
+        path:'',title:'Perfil --',
+        component:ConteudoClientComponent
+      },
       {
         path:'dashboard',title:'Dashboard --',
         component:DashboardClientComponent
