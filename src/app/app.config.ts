@@ -12,6 +12,7 @@ import { getStorage } from 'firebase/storage';
 import { environment } from '../environments/environment';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
 export const appTitle = "Pedro Henrique Vieira";
 export const appConfig: ApplicationConfig = {
@@ -19,6 +20,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     provideAnimations(),
+    provideIonicAngular({
+      rippleEffect: false,
+      mode: 'md'
+    }),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(()=>getAuth()),
     provideStorage(()=>getStorage()),

@@ -22,9 +22,12 @@
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "@angular/service-worker": "^17.3.0",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic/angular": "^8.3.2",
+    "@ionic/angular-toolkit": "^12.1.1",
     "@ngrx/component": "^17.2.0",
     "firebase-tools": "^13.18.0",
-    "rxjs": "~7.8.0",
+    "rxjs": "~7.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },

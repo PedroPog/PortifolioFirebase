@@ -1,27 +1,38 @@
-<section id="perfil" class="banner">
-  <div class="informacoes">
-    <h1>Bem vindo,Eu me chamo {{name}}</h1>
-    <p>{{apresetacao}}</p>
-    <div class="caixaEstudo">
-      <div class="caixas conhecimento">
-        <span>Liguagem</span>
-        <p>Experienca com Angular,SpringBoot,Javafx\swing,Androind Java e Flutter</p>
-      </div>
-      <div class="caixas trabalho">
-        <span>Cargo Atual</span>
-        <p>{{cargoAtual}}</p>
-      </div>
-      <div class="caixas front-back">
-        <span>Não sei</span>
-        <p>TEste não sei ainda</p>
-      </div>
-    </div>
-  </div>
-  <img [src]="imagemPerson" alt="Imagem minha">
-</section>
-<section id="projeto" class="conteudo">
-teste
-</section>
-<section id="sobre">
-teste
-</section>
+@if (!loaded) {
+  <ion-list>
+    <ion-list-header>
+      <ion-skeleton-text [animated]="true" style="width: 80px"></ion-skeleton-text>
+    </ion-list-header>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>
+          <ion-skeleton-text [animated]="true" style="width: 80%;"></ion-skeleton-text>
+        </h3>
+        <p>
+          <ion-skeleton-text [animated]="true" style="width: 60%;"></ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text [animated]="true" style="width: 30%;"></ion-skeleton-text>
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+}@else {
+  <ion-list>
+    <ion-list-header>Albums</ion-list-header>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <ion-icon style="width: 100%; height: 100%" name="musical-notes"></ion-icon>
+      </ion-thumbnail>
+      <ion-label>
+        <h3>Abbey Road</h3>
+        <p>The Beatles</p>
+        <p>1969</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+}
+
