@@ -1,30 +1,78 @@
-:host{
+:host {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
 }
-.banner{
-  width: 100%;
+
+.banner {
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  .banner-img{
-    width: 100vw;
-    height: 30vh;
-    margin-top: 1%;
+  flex-wrap: nowrap;
+  padding: 2%;
+  justify-content: space-around;
+
+  .informacoes {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 1;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+
+    .caixaEstudo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 5%;
+
+      .caixas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 15vw;
+        height: 20vh;
+        border: 1px solid;
+        border-radius: 15px;
+        padding: 3%;
+        box-sizing: content-box;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        span {
+          color: black;
+          font-size: 1.2rem;
+          font-weight: 800;
+          padding-top: 1%;
+          padding-bottom: 4%;
+        }
+
+        p {
+          width: 100%;
+          display: flex;
+          word-break: break-word;
+          font-size: 13px;
+        }
+      }
+    }
   }
-  h1{
-    color: black;
-    font-weight: 200;
-    font-size: 2rem;
-    margin: 0;
-  }
-  p{
-    width: 45%;
-    font-size: 1rem;
-    font-weight: 300;
+
+  img {
+    width: 30%;
+    height: 75%;
+    object-fit: cover;
   }
 }
-

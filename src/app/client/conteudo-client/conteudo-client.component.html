@@ -1,8 +1,27 @@
-<section class="banner">
- <img [src]="imagemBanner" alt="banner-img" class="banner-img">
- <h1>Bem vindo!</h1>
- <p>{{frasebanner}}</p>
+<section id="perfil" class="banner">
+  <div class="informacoes">
+    <h1>Bem vindo,Eu me chamo {{name}}</h1>
+    <p>{{apresetacao}}</p>
+    <div class="caixaEstudo">
+      <div class="caixas conhecimento">
+        <span>Liguagem</span>
+        <p>Experienca com Angular,SpringBoot,Javafx\swing,Androind Java e Flutter</p>
+      </div>
+      <div class="caixas trabalho">
+        <span>Cargo Atual</span>
+        <p>{{cargoAtual}}</p>
+      </div>
+      <div class="caixas front-back">
+        <span>Não sei</span>
+        <p>TEste não sei ainda</p>
+      </div>
+    </div>
+  </div>
+  <img [src]="imagemPerson" alt="Imagem minha">
 </section>
-<div class="conteudo">
-
-</div>
+<section id="projeto" class="conteudo">
+teste
+</section>
+<section id="sobre">
+teste
+</section>

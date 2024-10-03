@@ -1,12 +1,23 @@
 <mat-toolbar color="primary">
-  @if ((viewPoint$ | async) !== 'XSmall' ||
-  (viewPoint$ | async) !== 'Small' ||
-  (viewPoint$ | async) !== 'Medium') {
+  @if ((viewPoint$ | async) === 'XSmall' ||
+  (viewPoint$ | async) === 'Small' ||
+  (viewPoint$ | async) === 'Medium') {
     <button mat-icon-button (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
   }
-  <span class="title-toolbar">{{appName}}</span>
+  <button mat-button class="title-toolbar">{{appName}}</button>
+
+  @if ((viewPoint$ | async) !== 'XSmall' ||
+  (viewPoint$ | async) !== 'Small' ||
+  (viewPoint$ | async) !== 'Medium') {
+    <ul>
+      <button mat-button href="#perfil">Perfil</button>
+      <button mat-button href="#projeto">Projeto</button>
+      <button mat-button href="#sobre">Sobre</button>
+    </ul>
+  }
+
   @if(this.authService.currentUserSig()!=null){
     <button mat-fab [matMenuTriggerFor]="menuprofile" style="background-color: transparent;">
       <img class="img-proffile" [src]="authService.currentUserSig()?.imagem"

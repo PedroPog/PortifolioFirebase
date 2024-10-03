@@ -9,7 +9,6 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { FirebaseService } from '../shared/Firebase.service';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDrawer, MatSidenavModule } from '@angular/material/sidenav';
-import { LetDirective } from '@ngrx/component';
 
 @Component({
   selector: 'app-home-client',
@@ -23,7 +22,6 @@ import { LetDirective } from '@ngrx/component';
     NgOptimizedImage,
     RouterOutlet,
     CommonModule,
-    LetDirective,
     MatSidenavModule,
   ],
   templateUrl: './home-client.component.html',
